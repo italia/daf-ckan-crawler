@@ -4,6 +4,7 @@ Pseudo distributed ckan crawler
 For mac users
 
 export LC_ALL=en_US.UTF-8
+
 export LANG=en_US.UTF-8
 
 intall pipenv
