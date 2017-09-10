@@ -1,0 +1,210 @@
+{
+  "dcatapit": {
+    "name": "agency",
+    "title": "agency",
+    "identifier": "agency",
+    "alternate_identifier": "agency",
+    "notes": "dsada dasda dsad dasd dasd",
+    "theme": "ECON",
+    "publisher_name": "open_data",
+    "publisher_editor": "open_data",
+    "publisher_identifier": "open_data",
+    "modified": "2017-07-23",
+    "holder_name": "open_data",
+    "holder_identifier": "open_data",
+    "license_title": "Altro (Non Commerciale)",
+    "license_id": "other-nc",
+    "owner_org": "open_data",
+    "frequency": "unknown",
+    "creation_date": "2017-07-23",
+    "groups": [
+      
+    ],
+    "resources": [
+      
+    ],
+    "relationships_as_object": [
+      
+    ],
+    "relationships_as_subject": [
+      
+    ],
+    "tags": [
+      
+    ]
+  },
+  "dataschema": {
+    "avro": {
+      "namespace": "daf:\/\/open_data\/ECON\/agency",
+      "name": "agency",
+      "aliases": "agency",
+      "fields": [
+        {
+          "name": "agency_id",
+          "`type`": "string"
+        },
+        {
+          "name": "agency_name",
+          "`type`": "string"
+        },
+        {
+          "name": "agency_url",
+          "`type`": "string"
+        },
+        {
+          "name": "agency_timezone",
+          "`type`": "string"
+        },
+        {
+          "name": "agency_lang",
+          "`type`": "string"
+        },
+        {
+          "name": "agency_phone",
+          "`type`": "string"
+        }
+      ],
+      "`type`": "record"
+    },
+    "flatSchema": [
+      {
+        "name": "agency_id",
+        "`type`": "string",
+        "metadata": {
+          "desc": "",
+          "required": 0,
+          "field_type": "",
+          "cat": "",
+          "tag": "",
+          "constr": [
+            {
+              "`type`": "",
+              "param": ""
+            }
+          ],
+          "semantics": {
+            "id": "",
+            "context": ""
+          }
+        }
+      },
+      {
+        "name": "agency_name",
+        "`type`": "string",
+        "metadata": {
+          "desc": "",
+          "required": 0,
+          "field_type": "",
+          "cat": "",
+          "tag": "",
+          "constr": [
+            {
+              "`type`": "",
+              "param": ""
+            }
+          ],
+          "semantics": {
+            "id": "",
+            "context": ""
+          }
+        }
+      },
+      {
+        "name": "agency_url",
+        "`type`": "string",
+        "metadata": {
+          "desc": "",
+          "required": 0,
+          "field_type": "",
+          "cat": "",
+          "tag": "",
+          "constr": [
+            {
+              "`type`": "",
+              "param": ""
+            }
+          ],
+          "semantics": {
+            "id": "",
+            "context": ""
+          }
+        }
+      },
+      {
+        "name": "agency_timezone",
+        "`type`": "string",
+        "metadata": {
+          "desc": "",
+          "required": 0,
+          "field_type": "",
+          "cat": "",
+          "tag": "",
+          "constr": [
+            {
+              "`type`": "",
+              "param": ""
+            }
+          ],
+          "semantics": {
+            "id": "",
+            "context": ""
+          }
+        }
+      },
+      {
+        "name": "agency_lang",
+        "`type`": "string",
+        "metadata": {
+          "desc": "",
+          "required": 0,
+          "field_type": "",
+          "cat": "",
+          "tag": "",
+          "constr": [
+            {
+              "`type`": "",
+              "param": ""
+            }
+          ],
+          "semantics": {
+            "id": "",
+            "context": ""
+          }
+        }
+      },
+      {
+        "name": "agency_phone",
+        "`type`": "string",
+        "metadata": {
+          "desc": "",
+          "required": 0,
+          "field_type": "",
+          "cat": "",
+          "tag": "",
+          "constr": [
+            {
+              "`type`": "",
+              "param": ""
+            }
+          ],
+          "semantics": {
+            "id": "",
+            "context": ""
+          }
+        }
+      }
+    ]
+  },
+  "operational": {
+    "group_own": "open_data",
+    "is_std": false,
+    "std_schema": {
+      
+    },
+  "input_src" : {
+     "url" : ""
+   },
+    "read_type": "update",
+    "ftporws": "webservice"
+  }
+}
