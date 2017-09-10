@@ -60,7 +60,6 @@ class MasterCrawler:
         result = response_dict['result']
         test_res = result #[:2000]
         for res in test_res:
-            print res
             self.r.rpush("dataset_id", res)
 
     def consumeData(self):
@@ -85,21 +84,21 @@ class MasterCrawler:
                     idInfo = info['id']
                     for resource in resources:
                         rUrl = resource['url']
-                        rFormat = resource['format']
+                        rFormat = resource['format'].lower()
                         rName = resource['name']
                         rId = resource['id']
                         finalUrl = self.formatUrl(rUrl)
-                        print finalUrl
+                        #print finalUrl
                         rInfo = urllib2.Request(finalUrl)
                         try:
                             rReq = urllib2.urlopen(rInfo)
                             if rReq.code == 200:
                                 resource["m_status"] = "ok"
                                 if "csv" in rFormat.lower():
-                                    print "qui passo"
+                                    #print "qui passo"
                                     data = rReq.read()
                                     data_dir = "./open_data/" + dataset_id
-                                    print data_dir
+                                    #print data_dir
                                     if not os.path.exists(data_dir):
                                         os.makedirs(data_dir)
                                     file_path = data_dir + "/" + rId + "_" + rFormat + ".csv"
@@ -127,15 +126,15 @@ class MasterCrawler:
                                 #    file_path = data_dir + "/" + rId + "_" + rFormat + ".json"
                                 #    with open(file_path, "wb") as code:
                                 #        code.write(data)
-                                print "PASSO DI QUI"
-                                print json.dumps(info)
+                                #print "PASSO DI QUI"
+                                #print json.dumps(info)
                             else:
                                 resource["m_status"] = "ko"
                         except Exception, e:
                             resource["m_status"] = "ko"
                             print str(e)
                 else:
-                    print info
+                    #print info
                     info["m_status_resources"] = "ko"
                     print "NO RESOURCES"
             #rData = rReq.read()
