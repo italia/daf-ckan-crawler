@@ -1,0 +1,12 @@
+[
+  {
+    "campo1": {"campo1.1": "data 1.1", "campo1.2": "data 1.2"},
+    "campo2": 1.2,
+    "campoData": "2010-01-01"
+  },
+  {
+    "campo1": {"campo1.1": "data 1.1_2", "campo1.2": "data 1.2_2"},
+    "campo2": 3.2,
+    "campoData": "2010-02-01"
+  }
+]
